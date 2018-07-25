@@ -56,7 +56,7 @@ def shopping_list_post():
               
             return render_template('shopping_list.html', result="\n".join([str(item) for item in shop_list]))
           except ValueError:
-            return "Easy now! Let's keep it simple! Just words with a space between them"
+            return "Easy now! Let's keep it simple! Just words with a dash between them"
           
   	      
 @app.route('/time', methods=['GET','POST'])
